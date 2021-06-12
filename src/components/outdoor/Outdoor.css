@@ -1,0 +1,169 @@
+.outdoor {
+  position: relative;
+}
+.outdoor__img {
+  margin: 0 auto;
+
+  padding: 1rem 4rem;
+}
+
+.outdoor__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.9rem;
+}
+.outdoor__content {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.outdoor__content > h2 {
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+}
+.outdoor__content > p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.outdoor__link {
+  background-color: #e41d56;
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  display: inline-block;
+}
+.outdoor__link::after {
+  position: absolute;
+  content: "";
+  background-color: #131313;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: all 300ms ease;
+  border-radius: 0.9rem;
+  height: 100%;
+}
+.outdoor__link:hover::after {
+  transition: all 300ms ease;
+  width: 100%;
+}
+.outdoor__link a {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1023px) {
+  .outdoor__content {
+    top: 20%;
+  }
+  .outdoor__content > h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .outdoor__content > p {
+    margin: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 807px) {
+  .outdoor__content {
+    top: 15%;
+  }
+  .outdoor__content > h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .outdoor__content > p {
+    margin: 0.5rem 0;
+    font-size: 0.99rem;
+  }
+  .outdoor__link {
+    padding: 0.9rem;
+  }
+  .outdoor__link a {
+    font-size: 0.9erem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .outdoor__img {
+    padding: 1rem 2rem;
+  }
+  .outdoor__content {
+    top: 20%;
+    left: 12%;
+  }
+  .outdoor__content > h2 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .outdoor__content > p {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+  .outdoor__link {
+    padding: 0.8rem;
+  }
+  .outdoor__link a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 510px) {
+  .outdoor__img {
+    padding: 1rem;
+  }
+  .outdoor__content {
+    top: 20%;
+    left: 12%;
+  }
+  .outdoor__content > h2 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .outdoor__content > p {
+    margin: 0.2rem 0;
+    font-size: 0.6rem;
+  }
+  .outdoor__link::after {
+    border-radius: 0.4rem;
+  }
+  .outdoor__link {
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+  }
+  .outdoor__link a {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 333px) {
+  .outdoor__img {
+    padding: 0.5rem;
+  }
+  .outdoor__content {
+    top: 12%;
+    left: 12%;
+  }
+  .outdoor__content > h2 {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+  .outdoor__content > p {
+    margin: 0.2rem 0;
+    font-size: 0.5rem;
+  }
+  .outdoor__link {
+    padding: 0.3rem;
+  }
+
+  .outdoor__link a {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+}

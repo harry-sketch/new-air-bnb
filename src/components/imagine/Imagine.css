@@ -1,0 +1,37 @@
+.imagine {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.imagine > h2 {
+  margin: 0 0 0 1.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.imagine__content {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-gap: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+/*  Responsive*/
+
+@media screen and (max-width: 915px) {
+  .imagine__content {
+    padding: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 580px) {
+  .imagine__content {
+    padding: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 330px) {
+  .imagine__content {
+    padding: 1rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

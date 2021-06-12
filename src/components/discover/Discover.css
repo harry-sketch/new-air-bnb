@@ -1,0 +1,56 @@
+.discover {
+  padding: 1rem;
+  margin: 0 auto;
+}
+.discover > h2 {
+  margin: 0 0 0 1.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.discover > p {
+  margin: 0.4rem 0 0 1.2rem;
+  font-size: 1.4rem;
+}
+.discover__content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem;
+  padding: 1rem 4rem;
+}
+
+/* responisve */
+
+@media screen and (max-width: 800px) {
+  .discover__content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .discover h2 {
+    font-size: 1.5rem;
+  }
+
+  .discover p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .discover h2 {
+    font-size: 1.2rem;
+  }
+
+  .discover p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 359px) {
+  .discover h2 {
+    font-size: 1rem;
+  }
+
+  .discover p {
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,135 @@
+footer {
+  border-top: 1px solid lightgray;
+  background-color: #f7f7f7;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 2rem;
+}
+.common__footer {
+  margin: 0 auto;
+  padding: 2rem;
+}
+.common__footer > h3 {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer__items {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.footer__items a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #131313;
+  font-weight: 400;
+  transition: all 300ms ease;
+}
+.footer__items a:hover {
+  border-bottom: 1px solid #131313;
+  transition: all 300ms ease;
+}
+.first__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.right__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+}
+.language__footer {
+  display: flex;
+  align-items: center;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+.left__footer > p {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.language__footer a {
+  text-decoration: underline;
+  color: #131313;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 0.1rem;
+}
+.rupee__footer a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #131313;
+}
+.static__footer {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-top: 1px solid lightgray;
+  box-shadow: 10px 0 20px -10px rgb(38, 57, 77);
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  height: 10vh;
+  position: fixed;
+  bottom: -20px;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+.static__common {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.static__common .static {
+  color: #dc0d64;
+}
+.static__common a {
+  text-decoration: none;
+  color: #131313;
+  margin-left: 0.5rem;
+}
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+  .footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .first__footer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .right__footer {
+    margin-top: 1rem;
+    width: 60%;
+  }
+  .static__footer {
+    display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer {
+    padding: 1rem;
+  }
+  .footer {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .first__footer {
+    padding: 0.5rem;
+  }
+  .right__footer {
+    width: 100%;
+  }
+}
