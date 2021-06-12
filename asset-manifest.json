@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/new-air-bnb/static/css/main.66917f4a.chunk.css",
+    "main.js": "/new-air-bnb/static/js/main.5babcd5c.chunk.js",
+    "main.js.map": "/new-air-bnb/static/js/main.5babcd5c.chunk.js.map",
+    "runtime-main.js": "/new-air-bnb/static/js/runtime-main.4f70d6d8.js",
+    "runtime-main.js.map": "/new-air-bnb/static/js/runtime-main.4f70d6d8.js.map",
+    "static/js/2.d0da406b.chunk.js": "/new-air-bnb/static/js/2.d0da406b.chunk.js",
+    "static/js/2.d0da406b.chunk.js.map": "/new-air-bnb/static/js/2.d0da406b.chunk.js.map",
+    "index.html": "/new-air-bnb/index.html",
+    "static/css/main.66917f4a.chunk.css.map": "/new-air-bnb/static/css/main.66917f4a.chunk.css.map",
+    "static/js/2.d0da406b.chunk.js.LICENSE.txt": "/new-air-bnb/static/js/2.d0da406b.chunk.js.LICENSE.txt",
+    "static/media/Showcase.css": "/new-air-bnb/static/media/bg-1.017437e7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f70d6d8.js",
+    "static/js/2.d0da406b.chunk.js",
+    "static/css/main.66917f4a.chunk.css",
+    "static/js/main.5babcd5c.chunk.js"
+  ]
+}
